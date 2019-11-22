@@ -1,0 +1,10 @@
+redux-101.js
+- the createStore() function works like: 
+  this.setState((preState)=> {
+    return preState
+  }) --- IT SET ITSELF BACK TO THE SAME THING, DOES ABSOLUTELY NOTHING
+  SO, everytime when the switch statement returns the default value
+  the state is set over and over again, therefore, you can't set 
+  state.count - this would overwrite the state object into undefined.
+
+
